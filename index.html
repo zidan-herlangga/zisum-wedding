@@ -522,7 +522,7 @@
             <h2>RSVP</h2>
             <p>for the wedding of</p>
             <h3>Reservasi Kehadiran</h3>
-            <div class="row">
+            <!-- <div class="row">
               <div class="col text-start">
                 <form class="tabel-form">
                   <div class="mb-3">
@@ -575,7 +575,26 @@
                   </button>
                 </form>
               </div>
-            </div>
+            </div> -->
+            <div id="disqus_thread"></div>
+              <script>
+                  /**
+                  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                  /*
+                  var disqus_config = function () {
+                  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                  };
+                  */
+                  (function() { // DON'T EDIT BELOW THIS LINE
+                  var d = document, s = d.createElement('script');
+                  s.src = 'https://zidanherlangga.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+                  })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
           </div>
         </div>
       </div>
@@ -625,7 +644,7 @@
                 </button>
               </div>
               <div class="whatsapp">
-                <a href="https://api.whatsapp.com/send?phone=6285157066514" class="btn btn-md my-4" style="background-color: var(--pink); color: white;"><i class="bi bi-whatsapp"></i> Konfirmasi via WA</a>
+                <a href="https://api.whatsapp.com/send?phone=085157066514" class="btn btn-md my-4" style="background-color: var(--pink); color: white;"><i class="bi bi-whatsapp"></i> Konfirmasi via WA</a>
               </div>
             </div>
           </div>
@@ -647,6 +666,10 @@
     <!-- JavaScript -->
     <script src="assets/script.js"></script>
 
+    <!-- Disqus -->
+    <script id="dsq-count-scr" src="//zidanherlangga.disqus.com/count.js" async></script>
+
+    <!-- JS CDN Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
