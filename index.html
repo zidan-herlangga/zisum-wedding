@@ -27,7 +27,7 @@
 
     <!-- SimplyCountdown -->
     <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
-    <script src="countdown/simplyCountdown.min.js"></script>
+    <!-- <script src="countdown/simplyCountdown.min.js"></script> -->
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -562,7 +562,7 @@
                       placeholder="Your name"
                     />
                   </div>
-                  <!-- <div class="mb-3">
+                  <div class="mb-3">
                     <label
                       for="exampleFormControlInput1"
                       class="form-label"
@@ -577,7 +577,7 @@
                       value=""
                       placeholder="Email address"
                     />
-                  </div> -->
+                  </div>
                   <div class="mb-3">
                     <label
                       for="exampleFormControlInput1"
@@ -655,14 +655,14 @@
         </div>
         <div class="text-center mt-4">
           <p>Anda juga bisa mengirim kado fisik ke alamat berikut</p>
-          <p></p>
+          <br>
             Gedung Pusdiklat Al-Muhajirien. <br />
             Jl. Cut Mutia No.17, RT.001/RW.011, Margahayu, Kec. Bekasi Tim.,
             Kota Bks.
           </p>
-          <!-- <div class="whatsapp">
-            <a href="https://api.whatsapp.com/send?phone=085157066514" class="btn btn-md my-4" style="background-color: var(--pink); color: white;"><i class="bi bi-whatsapp"></i> Konfirmasi via WA</a>
-          </div> -->
+          <br>
+          <p>Sekian</p>
+          <span class="thankyou " id="typed"></span>
         </div>
       </div>
     </section>
@@ -692,7 +692,22 @@
     ></script>
 
     <!-- SimplyCountdown -->
-    <script></script>
+    <script src="countdown/simplyCountdown.min.js"></script>
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2023, // required
+        month: 11, // required
+        day: 20, // required
+        hours: 8, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
+    </script>
 
     <!-- LightBox Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
@@ -702,6 +717,18 @@
     <script>
       AOS.init();
     </script>
+
+    <!-- TypIt -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      let typing = new Typed("#typed", {
+        strings: ["Terima Kasih"],
+        typeSpeed: 300,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
+    
 
     <!-- Message -->
     <script>
