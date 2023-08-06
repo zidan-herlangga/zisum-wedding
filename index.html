@@ -522,32 +522,36 @@
             <h2>RSVP</h2>
             <p>for the wedding of</p>
             <h3>Reservasi Kehadiran</h3>
-            <!-- <div class="row">
+             <div class="row">
               <div class="col text-start">
-                <form class="tabel-form">
+                <form class="tabel-form" autocomplete="off">
                   <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label"
                       >Name</label
                     >
                     <input
                       type="text"
+                      name="Name"
                       class="form-control"
-                      id="exampleFormControlInput1"
-                      required
+                      id="name"
+                      required=""
+                      value=""
                       placeholder="Your name"
                     />
                   </div>
                   <div class="mb-3">
                     <label
                       for="exampleFormControlInput1"
-                      class="form-label text"
+                      class="form-label"
                       >Email</label
                     >
                     <input
                       type="email"
+                      name="Email"
                       class="form-control"
-                      id="exampleFormControlInput1"
-                      required
+                      id="email"
+                      required=""
+                      value=""
                       placeholder="Email address"
                     />
                   </div>
@@ -557,44 +561,32 @@
                     >
                     <textarea
                       class="form-control"
-                      id="exampleFormControlTextarea1"
+                      name="Message"
+                      id="message"
                       placeholder="Anything to say? Dietary requipments. Special requests etc..."
                       rows="5"
-                      required
+                      required=""
                     ></textarea>
                   </div>
-                  <button
+                  <div class="form-group">
+                    <button
+                    type="button"
+                    name="submit"
+                    onclick="gotoWhatsapp()"
                     class="btn btn-md"
                     style="
                       background-color: var(--pink);
                       color: white;
                       box-shadow: var(--shadow);
                     "
-                  >
-                    Sumbit
-                  </button>
+                    >
+                      Send via Whatsapp
+                    </button>
+                  </div>
                 </form>
               </div>
-            </div> -->
-            <div id="disqus_thread"></div>
-              <script>
-                  /**
-                  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                  /*
-                  var disqus_config = function () {
-                  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                  };
-                  */
-                  (function() { // DON'T EDIT BELOW THIS LINE
-                  var d = document, s = d.createElement('script');
-                  s.src = 'https://zidanherlangga.disqus.com/embed.js';
-                  s.setAttribute('data-timestamp', +new Date());
-                  (d.head || d.body).appendChild(s);
-                  })();
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div> 
+  
           </div>
         </div>
       </div>
@@ -688,6 +680,24 @@
       AOS.init();
     </script>
 
+    <!-- Message -->
+    <script>
+      function gotoWhatsapp(){
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let message= document.getElementById("message").value;
+
+        let url = "https://wa.me/685157066514?text="
+        + "Nama: " + name + "%0a"
+        + "Email: " + email + "%0a"
+        + "Pesan: " + message + "%0a"
+
+        window.open(url, '_black').focus()
+
+      }
+    </script>
+
+    <!-- Backsound -->
     <script>
       function playSound(audioName, loop, pause) {
       let audio = new Audio(audioName);
