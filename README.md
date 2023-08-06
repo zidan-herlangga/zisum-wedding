@@ -5,7 +5,7 @@
 
 ## Snapshot
 
-![Snapshot](img/Screenshot.png)
+![Snapshot](/img/Screenshot.png)
 
 ## Library
 
