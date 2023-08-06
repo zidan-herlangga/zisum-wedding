@@ -324,7 +324,7 @@ body {
 .rsvp {
   padding-top: 10rem;
   padding-bottom: 8rem;
-  background-image: url(/img/bg.png);
+/*   background-image: url(/img/bg.png); */
   background-position: center;
   background-size: cover;
 }
