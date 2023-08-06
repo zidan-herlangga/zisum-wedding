@@ -355,6 +355,29 @@
                   </div>
                 </div>
               </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(https://picsum.photos/300/304)"
+                ></div>
+                <div
+                  class="timeline-panel"
+                  data-aos="fade-right"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <div class="timeline-heading">
+                    <h3>Nikah</h3>
+                    <span>20 November 2023</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Asperiores fugiat aspernatur officia consequuntur ratione
+                      possimus?
+                    </p>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -539,7 +562,7 @@
                       placeholder="Your name"
                     />
                   </div>
-                  <div class="mb-3">
+                  <!-- <div class="mb-3">
                     <label
                       for="exampleFormControlInput1"
                       class="form-label"
@@ -554,9 +577,8 @@
                       value=""
                       placeholder="Email address"
                     />
-                  </div>
-
-<div class="mb-3">
+                  </div> -->
+                  <div class="mb-3">
                     <label
                       for="exampleFormControlInput1"
                       class="form-label"
@@ -596,26 +618,25 @@
                       color: white;
                       box-shadow: var(--shadow);
                     "
-                    >
+                    ><i class="bi bi-whatsapp"></i>
                       Send via Whatsapp
                     </button>
                   </div>
                 </form>
               </div>
             </div> 
-  
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Section Gifts -->
     <section id="gifts" class="gifts">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col">
             <h2>Gifts</h2>
             <img src="img/logo-dana.png" alt="" />
-            <!-- <h2>Gifts</h2> -->
             <p class="mt-4">
               Silahkan transfer ke rekening a.n ZIDAN HERLANGGA
             </p>
@@ -639,24 +660,9 @@
             Jl. Cut Mutia No.17, RT.001/RW.011, Margahayu, Kec. Bekasi Tim.,
             Kota Bks.
           </p>
-          <div class="row justify-content-center text-center">
-            <div class="col">
-              <label class="label">Copy Alamat</label>
-              <div class="copy-text">
-                <input
-                  type="text"
-                  class="text"
-                  value="https://goo.gl/maps/rEdbJA9oTrzPTXhr7"
-                />
-                <button title="Copy">
-                  <i class="bi bi-clipboard"></i>
-                </button>
-              </div>
-              <div class="whatsapp">
-                <a href="https://api.whatsapp.com/send?phone=6285157066514&text=" class="btn btn-md my-4" style="background-color: var(--pink); color: white;"><i class="bi bi-whatsapp"></i> Konfirmasi via WA</a>
-              </div>
-            </div>
-          </div>
+          <!-- <div class="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=085157066514" class="btn btn-md my-4" style="background-color: var(--pink); color: white;"><i class="bi bi-whatsapp"></i> Konfirmasi via WA</a>
+          </div> -->
         </div>
       </div>
     </section>
@@ -701,15 +707,15 @@
     <script>
       function gotoWhatsapp(){
         let name = document.getElementById("name").value;
-        let email = document.getElementById("email").value;
-let phone = document.getElementById("phone").value;
+        // let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
         let message= document.getElementById("message").value;
 
         let url = "https://wa.me/6285157066514?text="
-        + "Nama: " + name + "%0a"
-        + "Email: " + email + "%0a"
-+ "Phone: " + phone + "%0a" + "%0a"
-        + "Pesan: " + message + "%0a"
+        + "Nama : " + name + "%0a"
+        // + "Email : " + email + "%0a"
+        + "Phone : " + phone + "%0a" + "%0a"
+        + "Pesan : " + "%0a" + message
 
         window.open(url, '_black').focus()
 
