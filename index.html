@@ -555,6 +555,23 @@
                       placeholder="Email address"
                     />
                   </div>
+
+<div class="mb-3">
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label"
+                      >Email</label
+                    >
+                    <input
+                      type="phone"
+                      name="Phone"
+                      class="form-control"
+                      id="phone"
+                      required=""
+                      value=""
+                      placeholder="No. Phone"
+                    />
+                  </div>
                   <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label"
                       >Message</label
@@ -690,6 +707,7 @@
         let url = "https://wa.me/6285157066514?text="
         + "Nama: " + name + "%0a"
         + "Email: " + email + "%0a"
++ "Phone: " + phone + "%0a"
         + "Pesan: " + message + "%0a"
 
         window.open(url, '_black').focus()
