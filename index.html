@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id-ID">
   <head>
     <meta charset="utf-8" />
+    <meta name="description" content="The Wedding of Zidan & Sumiati" />
+    <meta name="keywords" content="Pernikahan Zidan & Sumiati" />
+    <meta name="author" content="Zidan Herlangga" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Favicon -->
     <link
@@ -19,20 +22,20 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
     />
 
     <!-- My CSS -->
     <link rel="stylesheet" href="assets/style.css" />
-    <link rel="stylesheet" href="assets/music.css" />
+    <link rel="stylesheet" href="assets/style-music.css" />
 
     <!-- AOS Animated -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- Smooth Scroll -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script> -->
+
     <!-- SimplyCountdown -->
     <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
-    <!-- <script src="countdown/simplyCountdown.min.js"></script> -->
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,9 +44,6 @@
       href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100;0,400;0,700;1,600&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Backsound -->
-    <audio src="backsound.mp3" autoplay="autoplay"></audio>
   </head>
   <body>
     <!-- Hero Section -->
@@ -56,9 +56,22 @@
         <h1>Zidan & Sumiati</h1>
         <p>Akan melaksanakan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
-        <a href="#home" class="btn btn-md mt-4">
-          <i class="bi bi-inbox"></i> Lihat Undangan
-        </a>
+        <div
+          class="d-flex w-75 d-flex justify-content-center align-items-center flex-column mx-auto mt-4"
+        >
+          <a
+            href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NGlyazFzaWxtc2dsaWI4cDNjdGdrNWpzNXQgemlkYW50ZWNoMDRAbQ&tmsrc=zidantech04%40gmail.com"
+            class="btn btn-md"
+          >
+            <i class="bi bi-calendar"></i> Save Tanggal
+          </a>
+          <p class="disabled fs-6">
+            *Klik tombol ini untuk menyimpan tanggal pada google kalender
+          </p>
+          <a href="#home" class="btn btn-md mt-4">
+            <i class="bi bi-inbox"></i> Lihat Undangan
+          </a>
+        </div>
       </main>
     </section>
 
@@ -93,12 +106,12 @@
           </div>
           <div class="offcanvas-body">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#home">Home</a>
-              <a class="nav-link" href="#info">Info</a>
-              <a class="nav-link" href="#story">Story</a>
-              <a class="nav-link" href="#gallery">Gallery</a>
-              <a class="nav-link" href="#rsvp">RSVP</a>
-              <a class="nav-link" href="#gifts">Gifts</a>
+              <a data-scroll class="nav-link" href="#home">Home</a>
+              <a data-scroll class="nav-link" href="#info">Info</a>
+              <a data-scroll class="nav-link" href="#story">Story</a>
+              <a data-scroll class="nav-link" href="#gallery">Gallery</a>
+              <a data-scroll class="nav-link" href="#rsvp">RSVP</a>
+              <a data-scroll class="nav-link" href="#gifts">Gifts</a>
             </div>
           </div>
         </div>
@@ -127,23 +140,26 @@
             <div class="row">
               <div class="col-8 text-end">
                 <h3>Zidan Herlangga</h3>
+                <p>Putra Pertama dari</p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Distinctio atque porro, nemo exercitationem qui quod.
-                </p>
-                <p>
-                  Putra dari Bpk. Lorem <br />
+                  Bpk. Darmin Rakasiwi <br />
                   dan <br />
-                  Ibu Ipsum
+                  Ibu Endang S
                 </p>
-                <span class="sosmed">
-                  <a
-                    href="https://instagram.com/zidanherlangga04_"
-                    target="_blank"
-                  >
-                    <i class="bi bi-instagram"></i> Zidan
+                <div class="sosmed sosmed-right">
+                  <a href="https://instagram.com/zidanherlangga04_">
+                    <i class="bi bi-instagram"></i>
                   </a>
-                </span>
+                  <a href="https://twitter.com/" target="_blank">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                  <a href="https://facebook.com/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="https://linkedin.com/" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
               </div>
               <div class="col-4">
                 <img
@@ -156,7 +172,9 @@
             </div>
           </div>
 
-          <span class="heart"><i class="bi bi-heart-fill"></i></span>
+          <span class="heart" data-aos-duration="1000"
+            ><i class="bi bi-heart-fill" data-aos="fade-in"></i
+          ></span>
 
           <div class="col-lg-6" data-aos="fade-in" data-aos-duration="1000">
             <div class="row">
@@ -170,20 +188,23 @@
               </div>
               <div class="col-8">
                 <h3>Sumiati</h3>
+                <p>Putri Pertama dari</p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Distinctio atque porro, nemo exercitationem qui quod.
-                </p>
-                <p>
-                  Putra dari Bpk. Ipsum <br />
+                  Bpk. Fulan <br />
                   dan <br />
-                  Ibu Lorem
+                  Ibu Fulan
                 </p>
-                <span class="sosmed">
-                  <a href="https://instagram.com/smtincm" target="_blank">
-                    <i class="bi bi-instagram"></i> Sumiati
+                <div class="sosmed sosmed-left">
+                  <a href="https://instagram.com/smtincm">
+                    <i class="bi bi-instagram"></i>
                   </a>
-                </span>
+                  <a href="https://twitter.com/smtincm" target="_blank">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                  <a href="https://facebook.com/smtincm" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -277,8 +298,8 @@
             <span>Bagaimana Cinta Kami Bersemi</span>
             <h2>Cerita Kami</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Consequuntur a exercitationem beatae cupiditate obcaecati cum.
+              Ini adalah cerita singkat kami berdua yang akan digambarkan dalam
+              timeline berikut
             </p>
           </div>
         </div>
@@ -552,7 +573,7 @@
           <div class="col-sm-12">
             <h2>RSVP</h2>
             <p>for the wedding of</p>
-            <h3>Reservasi Kehadiran</h3>
+            <h3 class="mb-5">Reservasi Kehadiran</h3>
             <div class="row">
               <div class="col text-start">
                 <form class="tabel-form" autocomplete="off">
@@ -671,12 +692,15 @@
       </div>
     </section>
 
-    <audio id="track">
-      <source src="music.mp3" type="audio/mpeg" />
-    </audio>
+    <!-- Audio -->
+    <div>
+      <audio id="track">
+        <source src="music.mp3" type="audio/mpeg" />
+      </audio>
 
-    <div id="player-container">
-      <div id="play-pause" class="play">Play</div>
+      <div id="player-container">
+        <div id="play-pause" class="play">Play</div>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -690,16 +714,12 @@
       </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- JavaScript Start -->
     <script src="assets/script.js"></script>
     <script src="assets/music.js"></script>
 
     <!-- JS CDN Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- SimplyCountdown -->
     <script src="countdown/simplyCountdown.min.js"></script>
@@ -738,42 +758,6 @@
         loop: true,
       });
     </script>
-
-    <!-- Message -->
-    <script>
-      function gotoWhatsapp() {
-        let name = document.getElementById("name").value;
-        // let email = document.getElementById("email").value;
-        let phone = document.getElementById("phone").value;
-        let message = document.getElementById("message").value;
-
-        let url =
-          "https://wa.me/6285157066514?text=" +
-          "Nama : " +
-          name +
-          "%0a" +
-          // + "Email : " + email + "%0a"
-          "Phone : " +
-          phone +
-          "%0a" +
-          "%0a" +
-          "Pesan : " +
-          "%0a" +
-          message;
-
-        window.open(url, "_black").focus();
-      }
-    </script>
-
-    <!-- Backsound -->
-    <script>
-      function playSound(audioName, loop, pause) {
-        let audio = new Audio(audioName);
-        audio.pause = false;
-        audio.loop = true;
-        audio.play();
-      }
-      playSound(".mp3");
-    </script>
+    <!-- JavaScript End -->
   </body>
 </html>

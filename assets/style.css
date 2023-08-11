@@ -8,20 +8,26 @@ body {
   width: 100%;
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 .sosmed {
-  background-color: var(--pink);
-  padding: 0.5rem;
-  border-radius: 5px;
+  display: inline;
+}
+
+.sosmed-right {
+  float: right;
+}
+
+.sosmed-left {
+  float: left;
 }
 
 .sosmed a {
   text-decoration: none;
-  color: white;
+  color: var(--pink);
+  margin: 0 3px 0 3px;
 }
 
 .hero::before {
@@ -143,6 +149,7 @@ body {
   width: 40px;
   height: 40px;
   background-color: white;
+  z-index: 4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -475,6 +482,10 @@ body {
     border-right-width: 15px;
     left: -15px;
     right: auto;
+  }
+  .sosmed-inverted {
+    display: block;
+    float: right;
   }
 }
 
