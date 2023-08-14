@@ -57,7 +57,7 @@ function gotoWhatsapp() {
   let message = document.getElementById("message").value;
 
   let url =
-    "https://wa.me/62xxxxxxxxxxx?text=" + // Masukan no whatsapp kalian agar para tamu dapat mengirim pesan
+    "https://wa.me/6285157066514?text=" + // Masukan no whatsapp kalian agar para tamu dapat mengirim pesan
     "Nama : " +
     name +
     "%0a" +
