@@ -40,7 +40,6 @@ body {
   z-index: -2;
   filter: blur(1px);
   background-image: url(/img/bg-prewed.jpg);
-
   background-size: cover;
   background-position: center;
 }
@@ -101,15 +100,11 @@ body {
   text-transform: uppercase;
 }
 
-.mynavbar .nav-link:hover {
-  text-decoration: underline;
-}
-
 .home {
   background-image: url(/img/bg.png);
   background-size: cover;
   min-height: 100vh;
-  margin-top: -6rem;
+  /* margin-top: -6rem; */
   padding-top: 15rem;
   padding-bottom: 5rem;
 }
@@ -505,6 +500,10 @@ body {
     padding: 45px !important;
   }
 
+  .navbar {
+    display: none;
+  }
+
   .mynavbar .nav-link {
     font-size: 2rem;
     text-align: center;
@@ -541,6 +540,10 @@ body {
   .sosmed {
     margin: 0 0 5px 0;
     padding: 2px 0;
+  }
+
+  .hide {
+    display: none;
   }
 
   .simply-countdown,

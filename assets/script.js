@@ -46,7 +46,7 @@ track.addEventListener("ended", function () {
 //   audio.loop = true;
 //   audio.play();
 // }
-// playSound(".mp3");
+// playSound("/music.mp3");
 
 /* ========================================================================= */
 // RSVP
