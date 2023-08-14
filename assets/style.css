@@ -40,6 +40,7 @@ body {
   z-index: -2;
   filter: blur(1px);
   background-image: url(/img/bg-prewed.jpg);
+
   background-size: cover;
   background-position: center;
 }
@@ -98,6 +99,10 @@ body {
 
 .mynavbar .nav-link {
   text-transform: uppercase;
+}
+
+.mynavbar .nav-link:hover {
+  text-decoration: underline;
 }
 
 .home {
@@ -531,6 +536,11 @@ body {
   }
   body {
     width: 100%;
+  }
+
+  .sosmed {
+    margin: 0 0 5px 0;
+    padding: 2px 0;
   }
 
   .simply-countdown,

@@ -1,0 +1,18 @@
+/* Gaya untuk tombol overlay */
+.overlay-content {
+  /* ... (gaya lain yang sudah ada) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay-button {
+  background-color: var(--pink);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
