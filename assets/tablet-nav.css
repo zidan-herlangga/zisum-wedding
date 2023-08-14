@@ -70,6 +70,10 @@ body {
     width: 90%;
   }
 
+  .nav-links-tablet {
+    gap: 0;
+  }
+
   .nav-link-tablet i {
     font-size: 1.4rem;
   }
