@@ -35,6 +35,12 @@ body {
   gap: 20px;
 }
 
+.nav-link-tablet:hover {
+  margin: 0 0 1.5rem 0;
+  padding: 0 5px 0 5px;
+  transition: 0.3s;
+}
+
 .nav-link-tablet {
   color: white;
   text-decoration: none;
