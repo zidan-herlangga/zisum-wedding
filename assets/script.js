@@ -40,13 +40,13 @@ track.addEventListener("ended", function () {
 });
 
 // Backsound Website
-function playSound(audioName, loop, pause) {
-  let audio = new Audio(audioName);
-  audio.pause = false;
-  audio.loop = true;
-  audio.play();
-}
-playSound(".mp3");
+// function playSound(audioName, loop, pause) {
+//   let audio = new Audio(audioName);
+//   audio.pause = false;
+//   audio.loop = true;
+//   audio.play();
+// }
+// playSound(".mp3");
 
 /* ========================================================================= */
 // RSVP
