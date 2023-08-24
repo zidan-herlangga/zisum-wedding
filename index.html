@@ -27,15 +27,10 @@
     />
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="assets/style.css" />
-    <link rel="stylesheet" href="assets/style-music.css" />
-    <link rel="stylesheet" href="assets/overlay.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- AOS Animated -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- Smooth Scroll -->
-    <!-- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script> -->
 
     <!-- SimplyCountdown -->
     <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
@@ -49,51 +44,26 @@
     />
   </head>
   <body>
-    <body>
-      <!-- Hero Section -->
-
-      <section
-        id="hero"
-        class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white overlay-content"
-      >
-        <main>
-          <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
-          <h1>Zidan & Sumiati</h1>
-          <!-- <p>Akan melaksanakan resepsi pernikahan dalam:</p>
-          <div class="simply-countdown"></div> -->
-          <div
-            class="d-flex w-75 d-flex justify-content-center align-items-center flex-column mx-auto mt-4"
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white overlay-content" style="filter: saturate(12px);"
+    >
+      <main>
+        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h1>Zidan & Sumiati</h1>
+        <div
+          class="d-flex w-75 d-flex justify-content-center align-items-center flex-column mx-auto mt-4"
+        >
+          <a
+            href="invitation/"
+            class="btn btn-md mt-4"
+            id="continueButtonOverlay"
           >
-            <!-- <a
-              href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NGlyazFzaWxtc2dsaWI4cDNjdGdrNWpzNXQgemlkYW50ZWNoMDRAbQ&tmsrc=zidantech04%40gmail.com"
-              class="btn btn-md"
-            >
-              <i class="bi bi-calendar"></i> Save Tanggal
-            </a>
-            <p class="disabled fs-6 pt-2">
-              *Klik tombol ini untuk menyimpan tanggal pada google kalender
-            </p> -->
-            <a
-              href="invitation/"
-              class="btn btn-md mt-4"
-              id="continueButtonOverlay"
-            >
-              <i class="bi bi-inbox"></i> Lihat Undangan
-            </a>
-          </div>
-        </main>
-      </section>
-      <script>
-        // // Tambahkan event listener untuk tombol overlay
-        // const continueButtonOverlay = document.getElementById(
-        //   "continueButtonOverlay"
-        // );
-
-        // continueButtonOverlay.addEventListener("click", () => {
-        //   // Redirect ke halaman berikutnya
-        //   window.location.href = "./invitation/";
-        // });
-      </script>
-    </body>
+            <i class="bi bi-inbox"></i> Lihat Undangan
+          </a>
+        </div>
+      </main>
+    </section>
   </body>
 </html>

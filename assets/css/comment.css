@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comment-box {
+    margin-top: 10px;
+    background-color: #ffccd4;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-box p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.comment-box::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffccd4;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    bottom: -5px;
+    left: -10px;
+}
+
+.reply-btn {
+    background-color: #ff3385;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.reply-btn:hover {
+    background-color: #ff0055;
+}
+
+.reply-container {
+    margin-top: 10px;
+}
+
+.reply-box {
+    background-color: #ffeedd;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reply-box::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffeedd;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    bottom: -5px;
+    left: -10px;
+}
+
+#comment-form {
+    margin-top: 20px;
+}
+
+#name,
+#comment,
+.reply-name,
+.reply-comment {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ff66b3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#name:focus,
+#comment:focus,
+.reply-name:focus,
+.reply-comment:focus {
+    outline: none;
+    border-color: #ff3385;
+    box-shadow: 0 0 8px #ff3385;
+}
+
+input[type="submit"],
+.submit-reply-btn {
+    background-color: #ff3385;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover,
+.submit-reply-btn:hover {
+    background-color: #ff0055;
+}
+
+/* Untuk layar lebih kecil */
+@media (max-width: 768px) {
+
+    .comment-box,
+    .reply-box {
+        max-width: 100%;
+    }
+
+    /* ... Gaya responsif lainnya ... */
+}

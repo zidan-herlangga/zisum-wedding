@@ -7,7 +7,10 @@
 
 ![Snapshot](img/Screenshot.png)
 
-## Library
+## Video
+
+<video src="img/Video Demo.mp4" controls="controls">
+</video>
 
 - Bootstrap v5.3 [Link](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - Google Fonts [Link](https://fonts.google.com)

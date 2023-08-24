@@ -27,10 +27,10 @@
     />
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="/assets/style.css" />
-    <link rel="stylesheet" href="/assets/style-music.css" />
-    <link rel="stylesheet" href="/assets/overlay.css" />
-    <link rel="stylesheet" href="/assets/tablet-nav.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style-music.css" />
+    <link rel="stylesheet" href="/assets/css/tablet-nav.css" />
+    <link rel="stylesheet" href="/assets/css/comment.css" />
 
     <!-- AOS Animated -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -49,7 +49,6 @@
       rel="stylesheet"
     />
   </head>
-  <body>
     <body data-aos="fade-in">
       <!-- Hero Section -->
       <section
@@ -64,19 +63,15 @@
           <div
             class="d-flex w-75 d-flex justify-content-center align-items-center flex-column mx-auto mt-4"
           >
-            <a
-              href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NGlyazFzaWxtc2dsaWI4cDNjdGdrNWpzNXQgemlkYW50ZWNoMDRAbQ&tmsrc=zidantech04%40gmail.com"
-              class="btn btn-md"
-            >
+            <!-- <a class="btn btn-md" target="_blank">
               <i class="bi bi-calendar"></i> Save Tanggal
             </a>
             <p class="disabled fs-6 pt-2">
               *Klik tombol ini untuk menyimpan tanggal pada google kalender
-            </p>
+            </p> -->
             <a
               href="#home"
-              class="btn btn-md mt-4 hide"
-              id="continueButtonOverlay"
+              class="btn btn-md mt-4"
             >
               <i class="bi bi-inbox"></i> Lihat Undangan
             </a>
@@ -200,7 +195,7 @@
                     <a href="https://twitter.com/dansec04_" target="_blank">
                       <i class="bi bi-twitter"></i>
                     </a>
-                    <a href="https://facebook.com/" target="_blank">
+                    <a href="https://facebook.com/profile.php?id=100092408072498" target="_blank">
                       <i class="bi bi-facebook"></i>
                     </a>
                     <a href="https://linkedin.com/" target="_blank">
@@ -210,7 +205,7 @@
                 </div>
                 <div class="col-4">
                   <img
-                    src="/img/thumbnail/2z.jpg"
+                    src="/img/thumbnail/zidan.jpg"
                     alt="Zidan Herlangga"
                     width="200"
                     class="img-responsive rounded-circle"
@@ -227,7 +222,7 @@
               <div class="row">
                 <div class="col-4">
                   <img
-                    src="/img/thumbnail/1s.jpg"
+                    src="/img/thumbnail/sumiati.jpg"
                     alt="Sumiati"
                     width="200"
                     class="img-responsive rounded-circle"
@@ -245,10 +240,10 @@
                     <a href="https://instagram.com/smtincm">
                       <i class="bi bi-instagram"></i>
                     </a>
-                    <a href="https://twitter.com/smtincm" target="_blank">
-                      <i class="bi bi-twitter"></i>
+                    <a href="https://twitter.com/" target="_blank">
+                    <i class="bi bi-twitter"></i>
                     </a>
-                    <a href="https://facebook.com/smtincm" target="_blank">
+                    <a href="https://facebook.com/" target="_blank">
                       <i class="bi bi-facebook"></i>
                     </a>
                   </div>
@@ -460,8 +455,7 @@
               <span>Memori Kisah Kami</span>
               <h2>Galeri Foto</h2>
               <p>
-                Di bawah ini adalah potret-potret yang menggambarkan perjalanan
-                kami dari pertemuan pertama hingga saat ini. Setiap gambar
+                Setiap gambar
                 memiliki cerita uniknya sendiri yang menceritakan cinta, tawa,
                 dan kenangan kami berdua.
               </p>
@@ -620,89 +614,94 @@
         <div class="container">
           <div class="row justify-content-center text-center">
             <div class="col-sm-12">
-              <h2>RSVP</h2>
-              <p>for the wedding of</p>
-              <h3 class="mb-5">Reservasi Kehadiran</h3>
+              <h2>Reservasi Kehadiran</h2>
+              <p class="text-white">Kami mengharapkan kehadiran para tamu undangan</p>
               <div class="row">
-                <div class="col text-start">
-                  <form class="tabel-form" autocomplete="off">
-                    <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label"
-                        >Name</label
-                      >
-                      <input
-                        type="text"
-                        name="Name"
-                        class="form-control"
-                        id="name"
-                        required=""
-                        value=""
-                        placeholder="Your name"
-                      />
+                <div class="card">
+                  <div class="card-body">
+                    <div class="col text-start">
+                      <form class="tabel-form" autocomplete="off">
+                        <div class="mb-3">
+                          <label for="name" class="form-label"
+                            >Nama</label
+                          >
+                          <input
+                            type="text"
+                            name="Name"
+                            class="form-control"
+                            id="name"
+                            required
+                            placeholder="Nama"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="email class="form-label"
+                            >Email</label
+                          >
+                          <input
+                            type="email"
+                            name="Email"
+                            class="form-control"
+                            id="email"
+                            required
+                            placeholder="Email"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="phone" class="form-label"
+                            >No. Telpon</label
+                          >
+                          <input
+                            type="number"
+                            name="Phone"
+                            class="form-control"
+                            id="phone"
+                            required
+                            placeholder="No. Telpon"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label
+                            for="message
+                            class="form-label"
+                            >Pesan</label
+                          >
+                          <textarea
+                            class="form-control"
+                            name="Message"
+                            id="message"
+                            placeholder="Pesan untuk pengantin"
+                            rows="5"
+                            required
+                          ></textarea>
+                        </div>
+                        <div class="form-group">
+                          <button
+                            type="button"
+                            name="submit"
+                            id="btn-whatsapp"
+                            class="btn btn-md"
+                          >
+                            <i class="bi bi-whatsapp"></i>
+                            Kirim via Whatsapp
+                          </button>
+                        </div>
+                      </form>
                     </div>
-                    <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label"
-                        >Email</label
-                      >
-                      <input
-                        type="email"
-                        name="Email"
-                        class="form-control"
-                        id="email"
-                        required=""
-                        value=""
-                        placeholder="Email address"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label"
-                        >Phone</label
-                      >
-                      <input
-                        type="phone"
-                        name="Phone"
-                        class="form-control"
-                        id="phone"
-                        required=""
-                        value=""
-                        placeholder="No. Phone"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label
-                        for="exampleFormControlTextarea1"
-                        class="form-label"
-                        >Message</label
-                      >
-                      <textarea
-                        class="form-control"
-                        name="Message"
-                        id="message"
-                        placeholder="Anything to say? Dietary requipments. Special requests etc..."
-                        rows="5"
-                        required=""
-                      ></textarea>
-                    </div>
-                    <div class="form-group">
-                      <button
-                        type="button"
-                        name="submit"
-                        onclick="gotoWhatsapp()"
-                        class="btn btn-md"
-                        style="
-                          background-color: var(--pink);
-                          color: white;
-                          box-shadow: var(--shadow);
-                        "
-                      >
-                        <i class="bi bi-whatsapp"></i>
-                        Send via Whatsapp
-                      </button>
-                    </div>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="comments">
+            <form id="comment-form">
+              <input id="name" type="text" placeholder="Nama Anda" required><br>
+              <textarea id="comment" placeholder="Tulis komentar Anda..." rows="4" required></textarea><br>
+              <input type="submit" value="Kirim Komentar">
+            </form>
           </div>
         </div>
       </section>
@@ -723,10 +722,11 @@
             <div class="col">
               <label class="label">Copy No.Rek</label>
               <div class="copy-text">
+                <!-- Ubah no telpon -->
                 <input
                   type="text"
                   class="text"
-                  value="085157066514"
+                  value="08512341234"
                 />
                 <button title="Copy">
                   <i class="bi bi-clipboard"></i>
@@ -750,7 +750,7 @@
       <!-- Audio -->
       <div>
         <audio id="track">
-          <source src="/music.mp3" type="audio/mpeg" />
+          <source src="/assets/music/music.mp3" type="audio/mpeg" />
         </audio>
 
         <div id="player-container">
@@ -763,15 +763,26 @@
         <div class="container">
           <div class="row py-5">
             <div class="col-sm-12 text-center">
-              <h6>© Copyright 2023 Zisum Wedding</h6>
+              <h6>© Copyright 2023 <span><a href="" class="text-decoration-none">Zisum Wedding</a></span></h6>
+              <div class="d-flex justify-content-center mt-3">
+                <a href="https://tiktok.com/" class="me-3 text-dark">
+                  <i class="bi bi-tiktok"></i>
+                </a>
+                <a href="https://facebook.com/profile.php?id=100092408072498" class="me-3 text-dark">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://instagram/zidanherlangga04_" class="me-3 text-dark">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </footer>
 
       <!-- JavaScript Start -->
-      <script src="/assets/script.js"></script>
-      <script src="/assets/music.js"></script>
+      <script src="/assets/javascript/script.js"></script>
+      <script src="/assets/javascript/comment.js"></script>
 
       <!-- JS CDN Bootstrap -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -813,7 +824,9 @@
           loop: true,
         });
       </script>
+
+      <!-- Fitur Komentar -->
+      <script src="/assets/comment.js"></script>
       <!-- JavaScript End -->
     </body>
-  </body>
 </html>
