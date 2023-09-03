@@ -354,7 +354,6 @@ body {
   border-radius: 5px;
   padding: 10px 10px;
   font-size: 14px;
-  
   transition: background-color 0.2s ease;
 }
 
@@ -546,6 +545,11 @@ body {
 
   .gifts img {
     width: 135px;
+  }
+
+  .footer {
+    background-color: #dbdada;
+    padding-bottom: 70px;
   }
 }
 
