@@ -5,15 +5,9 @@
 
 ## Snapshot
 
-![Snapshot](img/Screenshot.png)
+![Snapshot](img/Screenshot.png)
 
-## Video
-
-<video src="img/Video Demo.mp4" width="700" controls>
-</video>
-
-## Library
-
+## Library
 - Bootstrap v5.3 [Link](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - Google Fonts [Link](https://fonts.google.com)
 - Bootstrap Icons [Link](https://icons.getbotstrap.com)
